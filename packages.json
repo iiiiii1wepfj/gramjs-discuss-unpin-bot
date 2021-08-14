@@ -1,0 +1,14 @@
+{
+"name": "discussunpinbotgramjs",
+"version": "1.0.0",
+"description": "telegram discuss unpin bot with gramjs library",
+"main": "index.js",
+"scripts": {
+"start": "node index.js"
+},
+"author": "Itay <itay@itayki.com>",
+"license": "MIT",
+"dependencies": {
+"telegram": "latest"
+}
+}
