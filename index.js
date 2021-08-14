@@ -10,11 +10,11 @@ const {
     StringSession
 } = require("telegram/sessions");
 
-const ApiId = 123456;
-const ApiHash = "123456abcdfg";
-const BotToken = "123456789:ABCDEFJHI"
+const apiId = 123456;
+const apiHash = "123456abcdfg";
+const botToken = "123456789:ABCDEFJHI"
 
-const client = new TelegramClient(new StringSession(""), ApiId, ApiHash, {
+const client = new TelegramClient(new StringSession(""), apiId, apiHash, {
     connectionRetries: 5,
 });
 async function discussunpinhandler(event) {
@@ -33,7 +33,7 @@ async function discussunpinhandler(event) {
 (async () => {
 
     await client.start({
-        botAuthToken: BotToken,
+        botAuthToken: botToken,
     });
     client.addEventHandler(discussunpinhandler, new NewMessage({}));
 })();
